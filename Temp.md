@@ -1,3 +1,7 @@
+**TIPS:**
+- 形如`*待定内容*`的为未确定内容，正在Debug
+
+
 # CubeMX配置
 ## Pinout & Configuration
 
@@ -20,10 +24,10 @@
     - ARR:(170M/800k = 212.5) - 1 = 211
   - DMA Settings: TIM2_CH1
     - Direction: Memory To Peripheral
-    - Priority: `High`
+    - Priority: `*High*`
   - GPIO Settings
     - GPIO mode: Alternate Function Push Pull
-    - Maximum output speed: `High`
+    - Maximum output speed: `*High*`
 
 ### Middleware and Software Packs: FREERTOS
 - Mode
@@ -31,9 +35,9 @@
 - Configuration
   - Tasks and Queues
     - defaultTask
-      - Stack Size: `512` Words
+      - Stack Size: `*512*` Words
   - Advanced settings
-    - USE_NEWLIB_REENTRANT: `Disabled`
+    - USE_NEWLIB_REENTRANT: `*Disabled*`
 
 
 ## Clock Configuration
