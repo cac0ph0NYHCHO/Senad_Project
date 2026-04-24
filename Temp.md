@@ -25,6 +25,17 @@
     - GPIO mode: Alternate Function Push Pull
     - Maximum output speed: `High`
 
+### Middleware and Software Packs: FREERTOS
+- Mode
+  - CMSIS_V2
+- Configuration
+  - Tasks and Queues
+    - defaultTask
+      - Stack Size: `512` Words
+  - Advanced settings
+    - USE_NEWLIB_REENTRANT: `Disabled`
+
+
 ## Clock Configuration
 - HCLK:170MHz(STM32G474RET6芯片的最大频率)
 
@@ -35,3 +46,8 @@
 ## Tools
 
 
+
+# CubeMX生成后Keil5的设置
+- 魔术棒 --> Target--Code Generation --> ARM Compiler--version6
+- 删除原来的port.c文件，添加桌面ARM_CM4F文件夹里的port.c文件
+- 魔术棒 --> C/C++ --> Include Paths --> 删除原来的portable/RVDS/ARM_CM4F路径，把桌面的ARM_CM4F文件夹拖进`..\Middlewares\Third_Party\FreeRTOS\Source\portable`路径下，并选中添加到头文件路径中
