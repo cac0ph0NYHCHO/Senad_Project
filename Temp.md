@@ -21,7 +21,7 @@
   - Channel1: PWM Generation CH1
 - Configuration
   - Parameter Settings
-    - ARR:(170M/800k = 212.5) - 1 = 211
+    - ARR:(170M/800k = 212.5) - 1 = 212
   - DMA Settings: TIM2_CH1
     - Direction: Memory To Peripheral
     - Priority: `*High*`
@@ -58,4 +58,5 @@
 
 # 测试流程
 - 先打开PC6控制LED1测试RTOS环境是否配置成功：成功！
-- 开启PC3口输出翻转电平，学习示波器的使用
+- 开启PC3口输出翻转电平，学习示波器的使用，确实这示波器不太好用
+- 改变主频72MHz,ARR改成89，WS2812里数据0变成25，数据1变成60，dma数据变成half word
