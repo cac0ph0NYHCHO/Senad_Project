@@ -57,6 +57,8 @@
 - 魔术棒 --> C/C++ --> Include Paths --> 删除原来的portable/RVDS/ARM_CM4F路径，把桌面的ARM_CM4F文件夹拖进`..\Middlewares\Third_Party\FreeRTOS\Source\portable`路径下，并选中添加到头文件路径中
 
 # 测试流程
-- 先打开PC6控制LED1测试RTOS环境是否配置成功：成功！
-- 开启PC3口输出翻转电平，学习示波器的使用，确实这示波器不太好用
-- 改变主频72MHz,ARR改成89，WS2812里数据0变成25，数据1变成60，dma数据变成half word
+- (完成)先打开PC6控制LED1测试RTOS环境是否配置成功：成功！
+- (完成)开启PC3口输出翻转电平，学习示波器的使用，确实这示波器不太好用
+- (待定)改变主频72MHz,ARR改成89，WS2812里数据0变成25，数据1变成60，dma数据变成half word
+- (完成)PC0接收按键输入信号，控制PC6-LED1翻转电平
+- ()继续完成灯带的开发
